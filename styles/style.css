@@ -1,0 +1,46 @@
+ :root {
+     --bg-deep: #0a0a0c;
+     --bg-card: #15171a;
+     --accent-blue: #3b82f6;
+ }
+
+ body {
+     background-color: var(--bg-deep);
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     color: #e5e7eb;
+ }
+
+ main {
+     flex: 1;
+ }
+
+ .navbar {
+     background-color: rgba(10, 10, 12, 0.8) !important;
+     backdrop-filter: blur(10px);
+ }
+
+ .form-control:focus {
+     border-color: var(--accent-blue) !important;
+     box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25) !important;
+ }
+
+ .btn-primary {
+     background: linear-gradient(135deg, #3b82f6, #2563eb);
+     border: none;
+     transition: transform 0.2s, box-shadow 0.2s;
+ }
+
+ .btn-primary:hover {
+     box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+     transform: translateY(-1px);
+ }
+
+ .letter-spacing-2 {
+     letter-spacing: 2px;
+ }
+
+ .fs-7 {
+     font-size: 0.8rem;
+ }
